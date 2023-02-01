@@ -1,5 +1,9 @@
-package com.canalplus.meetingplanner.domain;
+package com.canalplus.meetingplanner.domain.service;
 
+import com.canalplus.meetingplanner.domain.*;
+import com.canalplus.meetingplanner.domain.exception.ResourceNotFoundException;
+import com.canalplus.meetingplanner.domain.repository.MeetingRoomRepository;
+import com.canalplus.meetingplanner.domain.repository.ReservationsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

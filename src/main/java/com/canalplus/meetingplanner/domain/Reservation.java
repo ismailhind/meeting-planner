@@ -1,6 +1,7 @@
 package com.canalplus.meetingplanner.domain;
 
 import jakarta.persistence.*;
+import org.springframework.lang.NonNull;
 
 import java.time.LocalDateTime;
 
@@ -21,13 +22,16 @@ public class Reservation {
 
     @Column(name = "date_begin")
     @Temporal(TemporalType.TIMESTAMP)
+    @NonNull
     private LocalDateTime dateBegin;
 
     @Column(name = "date_end")
     @Temporal(TemporalType.TIMESTAMP)
+    @NonNull
     private LocalDateTime dateEnd;
 
     @Column(name = "participants")
+    @NonNull
     private int participantsCount;
 
     public Reservation() {

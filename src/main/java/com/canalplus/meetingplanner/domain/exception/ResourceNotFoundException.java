@@ -1,4 +1,4 @@
-package com.canalplus.meetingplanner.domain;
+package com.canalplus.meetingplanner.domain.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

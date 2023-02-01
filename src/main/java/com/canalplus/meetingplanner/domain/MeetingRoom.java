@@ -2,6 +2,7 @@ package com.canalplus.meetingplanner.domain;
 
 
 import jakarta.persistence.*;
+import org.springframework.lang.NonNull;
 
 @Entity
 @Table(name="rooms")
@@ -12,6 +13,7 @@ public class MeetingRoom {
 	private String name;
 	
 	@Column(name="capacity")
+	@NonNull
 	private int capacity;
 
 	@Column(name="equipment")

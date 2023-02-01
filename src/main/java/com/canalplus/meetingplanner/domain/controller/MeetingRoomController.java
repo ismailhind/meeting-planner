@@ -1,5 +1,7 @@
-package com.canalplus.meetingplanner.domain;
+package com.canalplus.meetingplanner.domain.controller;
 
+import com.canalplus.meetingplanner.domain.MeetingRoom;
+import com.canalplus.meetingplanner.domain.service.MeetingRoomService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +28,7 @@ public class MeetingRoomController {
     }
 
     @GetMapping(value = "/rooms/{name}", produces = "application/json")
-    public ResponseEntity<MeetingRoom> getRoomById(@PathVariable("id") String name) {
+    public ResponseEntity<MeetingRoom> getRoomById(@PathVariable("name") String name) {
         LOGGER.info("Fetching Meeting Room with name {} ", name);
         Optional<MeetingRoom> room = Optional.ofNullable(meetingRoomServiceImp.findById(name));
         return room.map(meetingRoom -> new ResponseEntity<>(meetingRoom, HttpStatus.OK))

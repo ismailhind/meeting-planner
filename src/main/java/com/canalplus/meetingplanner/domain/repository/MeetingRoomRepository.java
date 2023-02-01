@@ -1,4 +1,4 @@
-package com.canalplus.meetingplanner.domain;
+package com.canalplus.meetingplanner.domain.repository;
 
 import com.canalplus.meetingplanner.domain.MeetingRoom;
 import org.springframework.data.jpa.repository.JpaRepository;

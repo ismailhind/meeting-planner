@@ -1,5 +1,7 @@
-package com.canalplus.meetingplanner.domain;
+package com.canalplus.meetingplanner.domain.controller;
 
+import com.canalplus.meetingplanner.domain.Reservation;
+import com.canalplus.meetingplanner.domain.service.ReservationService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

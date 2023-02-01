@@ -1,4 +1,4 @@
-package com.canalplus.meetingplanner.domain;
+package com.canalplus.meetingplanner.domain.service;
 
 import com.canalplus.meetingplanner.domain.Reservation;
 import org.springframework.stereotype.Service;
